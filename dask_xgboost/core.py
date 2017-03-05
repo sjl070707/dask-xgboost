@@ -11,7 +11,7 @@ from tornado import gen
 from dask import delayed
 from distributed.client import _wait
 from distributed.utils import sync
-from distributed.comm.core import parse_host_port
+from distributed.comm.addressing import parse_host_port
 import xgboost as xgb
 
 from .tracker import RabitTracker
